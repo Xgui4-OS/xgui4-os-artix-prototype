@@ -1,0 +1,44 @@
+---
+
+live-session:
+  user: xgui4-os
+  password: xgui4-os
+  autologin: true
+  use-xlibre: false
+  services:
+    - acpid
+    - bluetoothd
+    - cronie
+    - chrony
+    - metalog
+    - NetworkManager
+  user-services:
+    - dbus
+rootfs:
+  packages:
+    - mkinitcpio-nfs-utils
+    - squashfs-tools
+    - artix-grub-live
+  packages-init:
+    dinit:
+      - userspawn-dinit
+      - metalog-dinit
+      - networkmanager-dinit
+      - cups-dinit
+      - artix-live-dinit
+    openrc:
+      - metalog-openrc
+      - networkmanager-openrc
+      - cups-openrc
+      - artix-live-openrc
+    runit:
+      - userspawn-runit
+      - metalog-runit
+      - networkmanager-runit
+      - cups-runit
+      - artix-live-runit
+    s6:
+      - metalog-s6
+      - networkmanager-s6
+      - cups-s6
+      - artix-live-s6
