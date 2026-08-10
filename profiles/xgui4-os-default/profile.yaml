@@ -27,7 +27,6 @@ rootfs:
     - bluedevil
     - breeze
     - dolphin-plugins
-    - falkon
     - filelight
     - flameshot
     - gwenview
@@ -100,7 +99,6 @@ rootfs:
     - qt6-multimedia-ffmpeg
     - sddm-kcm
     - spectacle
-    - strawberry
     - svgpart
     - sweeper
     - systemsettings
@@ -127,7 +125,6 @@ rootfs:
     - frei0r-plugins
     - fs-uae-launcher
     - gamemode
-    - gamescope
     - geany-plugins
     - gimp
     - git
@@ -208,29 +205,22 @@ rootfs:
     - strace
     - subtitleeditor
     - subversion
+    - cvs
     - svn
-    - telegram-desktop
     - testdisk
     - thunderbird
-    - tigervnc
     - timeshift
-    - tmux
-    - torsocks
-    - transmission-qt
-    - trizen
     - umu-launcher
     - unrar
     - vdpauinfo
     - veracrypt
     - vertex-themes
-    - virtualbox-guest-utils
     - vkd3d
     - vkmark
     - vulkan-intel
     - vulkan-radeon
     - vulkan-swrast
     - vulkan-tools
-    - waterfox
     - webp-pixbuf-loader
     - wine-gecko
     - wine-mono
@@ -240,11 +230,8 @@ rootfs:
     - xdg-desktop-portal-kde
     - xorg-xprop
     - xorg-xwininfo
-    - yaourtix
     - yt-dlp
-    - bazaar
     - discover
-    - octopi
     - pavucontrol-qt
     - pipewire-pulse
   packages-init:
@@ -286,7 +273,6 @@ livefs:
     - calamares-extensions
     - mkinitcpio-nfs-utils
     - squashfs-tools
-    - virtualbox-guest-utils
     - partitionmanager
   packages-init:
     dinit:
