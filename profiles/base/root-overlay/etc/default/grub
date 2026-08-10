@@ -31,7 +31,7 @@ GRUB_GFXPAYLOAD_LINUX="keep"
 #GRUB_DISABLE_LINUX_UUID="true"
 
 # Uncomment to disable generation of recovery mode menu entries
-GRUB_DISABLE_RECOVERY="true"
+GRUB_DISABLE_RECOVERY="false"
 
 # Uncomment and set to the desired menu colors.  Used by normal and wallpaper 
 # modes only.  Entries specified as foreground/background.
@@ -47,7 +47,7 @@ GRUB_THEME="/usr/share/grub/themes/artix/theme.txt"
 
 GRUB_SAVEDEFAULT="true"
 
-GRUB_DISABLE_LINUX_RECOVERY="true"
+GRUB_DISABLE_LINUX_RECOVERY="false"
 
 # Probe for other installed operating systems
 GRUB_DISABLE_OS_PROBER="false"
