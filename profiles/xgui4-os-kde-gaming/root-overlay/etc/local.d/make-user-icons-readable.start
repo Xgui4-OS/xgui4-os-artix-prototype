@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# accountsservice creates rw------- files
+chmod 644 /var/lib/AccountsService/users/* 2>/dev/null
+
+# Run once and disappear
+rm -f $0

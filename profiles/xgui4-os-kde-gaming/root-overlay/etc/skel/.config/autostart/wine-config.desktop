@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=sh -c "~/.config/autostart/wine-config.sh"
+Name=Run-once wine tweaks
+StartupNotify=false
+Terminal=false
+Type=Application

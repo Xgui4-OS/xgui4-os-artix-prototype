@@ -30,20 +30,84 @@ rootfs:
     - filelight
     - flameshot
     - gwenview
+    - k3b
+    - kactivitymanagerd
+    - kaddressbook
+    - kamera
+    - kamoso
     - kate
+    - kcalc
+    - kcharselect
+    - kcolorchooser
+    - kde-cli-tools
+    - kdecoration
+    - kdegraphics-thumbnailers
+    - kde-gtk-config
+    - kdeplasma-addons
+    - kdesdk-thumbnailers
+    - kdf
+    - kdialog
+    - keditbookmarks
+    - kfind
+    - kgamma
+    - kglobalacceld
+    - kgpg
+    - kinfocenter
+    - kio-admin
+    - kmenuedit
+    - konsole
+    - konversation
+    - kpipewire
+    - kruler
+    - kscreen
+    - kscreenlocker
+    - ksshaskpass
+    - ksystemstats
+    - ktimer
+    - kwalletmanager
+    - kwallet-pam
+    - kwayland
+    - kwayland-integration
+    - kwin
     - kwrite
+    - kwrited
+    - layer-shell-qt
+    - libkscreen
+    - libksysguard
+    - libplasma
+    - milou
     - network-manager-applet
     - ocean-sound-theme
     - okular
     - oxygen-sounds
+    - plasma5support
+    - plasma-activities
+    - plasma-activities-stats
+    - plasma-browser-integration
+    - plasma-desktop
+    - plasma-disks
+    - plasma-integration
+    - plasma-nm
+    - plasma-pa
+    - plasma-systemmonitor
+    - plasma-welcome
+    - plasma-workspace
+    - polkit-kde-agent
     - powerdevil
     - print-manager
+    - qqc2-breeze-style
+    - qt6-multimedia-ffmpeg
+    - sddm-kcm
     - spectacle
+    - svgpart
+    - sweeper
+    - systemsettings
     - artix-archlinux-support
     - artix-branding-base
     - artix-community-presets
     - accountsservice
     - adriconf
+    - antimicrox
     - base-devel
     - bluez-utils
     - breeze-gtk
@@ -52,14 +116,20 @@ rootfs:
     - clinfo
     - cvs
     - digikam
+    - dosbox
     - ext4magic
     - extundelete
     - ffmpegthumbs
     - fluidsynth
     - fortune-mod
+    - frei0r-plugins
+    - fs-uae-launcher
     - gamemode
+    - geany-plugins
     - gimp
     - git
+    - glyr
+    - goverlay
     - gpu-viewer
     - gtk-engines
     - gufw
@@ -70,9 +140,13 @@ rootfs:
     - handbrake
     - hddtemp
     - hdparm
+    - heroic-games-launcher
     - hunspell-en_US
     - hwdata
+    - inkscape
     - jre-openjdk
+    - kdenlive
+    - kodi
     - lib32-alsa-oss
     - lib32-alsa-plugins
     - lib32-artix-archlinux-support
@@ -86,10 +160,14 @@ rootfs:
     - lib32-vulkan-radeon
     - lib32-libxinerama
     - libxinerama
+    - libreoffice-fresh
     - libunrar
     - links
     - lsof
     - ltrace
+    - lutris
+    - mangohud
+    - mc
     - mcomix
     - meld
     - mednafen
@@ -97,11 +175,14 @@ rootfs:
     - modem-manager-gui
     - movit
     - nftables
+    - openrgb
+    - osdlyrics
     - oxygen
     - p7zip
     - pacman-contrib
     - picom
     - piper
+    - plymouth
     - primus_vk
     - projectm-pulseaudio
     - projectm-sdl
@@ -110,23 +191,32 @@ rootfs:
     - qt6ct
     - raw-thumbnailer
     - rdesktop
+    - redshift
+    - r-linux
     - schedtool
     - screen
     - scribus
     - smb4k
+    - sneedacity
     - solaar
     - songrec
     - soundfont-fluid
+    - steam
     - strace
     - subtitleeditor
     - subversion
     - cvs
     - svn
+    - testdisk
+    - thunderbird
     - timeshift
+    - umu-launcher
+    - unrar
     - vdpauinfo
     - veracrypt
     - vertex-themes
     - vkd3d
+    - vkmark
     - vulkan-intel
     - vulkan-radeon
     - vulkan-swrast

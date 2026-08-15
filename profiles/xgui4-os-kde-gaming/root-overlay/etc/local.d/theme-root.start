@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for setting in gtk-3.0 gtkrc gtkrc-2.0 kdeglobals qt5ct qt6ct mc; do
+    cp -a /etc/skel/.config/${setting} /root/.config/ 2>/dev/null &
+done
+
+rm -f $0
