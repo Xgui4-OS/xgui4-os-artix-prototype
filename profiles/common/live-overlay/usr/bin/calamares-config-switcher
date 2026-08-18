@@ -1,0 +1,24 @@
+#!/bin/bash
+
+export QT_STYLE_OVERRIDE=qt6gtk2
+export XAUTHCOOKIE=$XAUTHORITY
+export XDISPLAY=$DISPLAY
+
+readonly conf=/etc/calamares-config-switcher.conf
+
+if [[ -f "${conf}" ]]; then
+    # shellcheck source=/etc/calamares-config-switcher.conf
+    . "${conf}"
+fi
+
+title=${title:-"Switcher"}
+text=${text:-"Select:"}
+if [[ -z "${configs[*]}" ]]; then
+    configs=(offline online)
+fi
+
+select=$(kdialog --title "${title}" --combobox "${text}" "${configs[@]}" --default "${configs[0]}") || exit 1
+
+pkexec ln -snf /etc/calamares-"$select" /etc/calamares
+
+pkexec env DISPLAY=$XDISPLAY XAUTHORITY=$XAUTHCOOKIE QT_QPA_PLATFORMTHEME=qt6gtk2 calamares "$@"

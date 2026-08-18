@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Convenience service
+{
+    pacman-key --init 2>&1 >/dev/null
+    pacman-key --populate 2>&1 >/dev/null
+} &
+
+# Run once and disappear
+rm -f $0

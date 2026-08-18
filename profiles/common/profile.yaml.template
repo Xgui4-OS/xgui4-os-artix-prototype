@@ -1,0 +1,32 @@
+---
+
+live-session:
+  user: "artix"
+  password: "artix"
+  autologin: true
+  use-xlibre: false
+  services: []
+  user-services:
+    - dbus
+    - pipewire
+    - pipewire-pulse
+    - wireplumber
+
+rootfs:
+  packages: []
+
+  packages-init:
+    dinit:
+      - pipewire-dinit
+      - pipewire-pulse-dinit
+      - wireplumber-dinit
+      - dinit-user-spawn
+    openrc:
+      - pipewire-openrc
+      - pipewire-pulse-openrc
+      - wireplumber-openrc
+    runit: []
+    s6: []
+
+livefs:
+  packages: []

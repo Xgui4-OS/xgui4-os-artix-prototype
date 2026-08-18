@@ -1,0 +1,277 @@
+- name: "Default"
+  description: "Default packages"
+  hidden: false
+  selected: true
+  critical: true
+  immutable: true
+  packages:
+    - linux
+    - linux-headers
+    - grub
+    - sudo
+
+- name: "Kernel"
+  description: "Kernel and modules"
+  selected: false
+  packages:
+    - acpi_call
+    - bbswitch
+    - broadcom-wl
+    - r8168
+    - tp_smapi
+    - linux-lts
+    - linux-lts-headers
+
+- name: "Firmware"
+  description: "Firmware"
+  selected: false
+  packages:
+    - b43-fwcutter
+    - linux-firmware
+    - linux-firmware-bnx2x
+    - linux-firmware-liquidio
+    - linux-firmware-marvell
+    - linux-firmware-mellanox
+    - linux-firmware-nfp
+    - linux-firmware-qcom
+    - linux-firmware-qlogic
+    - linux-firmware-whence
+    - sof-firmware
+    - alsa-firmware
+
+- name: "Utilities"
+  description: "System Utilities"
+  selected: true
+  packages:
+    - lsb-release
+    - nano
+    - vi
+
+- name: "Style"
+  description: "Artix themes, icons, branding"
+  selected: false
+  packages:
+    - artix-icons
+    - artix-wallpapers
+    - artix-breeze-sddm
+    - artix-plasma-splash
+    - artix-netinstall-presets
+
+- name: "Desktop"
+  description: "Desktop"
+  selected: false
+  subgroups:
+    - name: "Input"
+      description: "Input drivers"
+      packages:
+        - xf86-input-evdev
+        - xf86-input-libinput
+        - xf86-input-synaptics
+        - xf86-input-vmmouse
+    - name: "Video"
+      description: "Video drivers"
+      packages:
+        - xf86-video-amdgpu
+        - xf86-video-ati
+        - xf86-video-dummy
+        - xf86-video-fbdev
+        - xf86-video-intel
+        - xf86-video-nouveau
+        - xf86-video-openchrome
+        - xf86-video-vesa
+        - xf86-video-vmware
+        - xf86-video-voodoo
+    - name: "Fonts"
+      description: "Xorg fonts"
+      packages:
+        - xorg-font-util
+        - xorg-fonts-encodings
+    - name: "Lxqt"
+      description: "Lxqt desktop"
+      selected: false
+      packages:
+        - lximage-qt
+        - lxqt-about
+        - lxqt-admin
+        - lxqt-archiver
+        - lxqt-config
+        - lxqt-globalkeys
+        - lxqt-notificationd
+        - lxqt-openssh-askpass
+        - lxqt-panel
+        - lxqt-policykit
+        - lxqt-powermanagement
+        - lxqt-qtplugin
+        - lxqt-runner
+        - lxqt-session
+        - lxqt-sudo
+        - lxqt-themes
+        - obconf-qt
+        - openbox
+        - pavucontrol-qt
+        - pcmanfm-qt
+        - qterminal
+        - screengrab
+        - xdg-desktop-portal-lxqt
+    - name: "Plasma"
+      description: "Plasma desktop"
+      selected: false
+      packages:
+        - bluedevil
+        - breeze
+        - breeze-gtk
+        - breeze-plymouth
+        - discover
+        - drkonqi
+        - flatpak-kcm
+        - kactivitymanagerd
+        - kde-cli-tools
+        - kde-gtk-config
+        - kdecoration
+        - kdeplasma-addons
+        - kgamma
+        - khotkeys
+        - kinfocenter
+        - kmenuedit
+        - kpipewire
+        - kscreen
+        - kscreenlocker
+        - ksshaskpass
+        - ksystemstats
+        - kwallet-pam
+        - kwayland-integration
+        - kwin
+        - kwrited
+        - layer-shell-qt
+        - libkscreen
+        - libksysguard
+        - milou
+        - oxygen
+        - oxygen-sounds
+        - plasma-browser-integration
+        - plasma-desktop
+        - plasma-disks
+        - plasma-firewall
+        - plasma-integration
+        - plasma-nm
+        - plasma-pa
+        - plasma-sdk
+        - plasma-systemmonitor
+        - plasma-thunderbolt
+        - plasma-vault
+        - plasma-welcome
+        - plasma-workspace
+        - plasma-workspace-wallpapers
+        - plymouth-kcm
+        - polkit-kde-agent
+        - powerdevil
+        - sddm-kcm
+        - systemsettings
+        - xdg-desktop-portal-kde
+
+    - name: "kde-applications"
+      description: "KDE applications"
+      selected: false
+      subgroups:
+    #     - name: "kde-accessibility"
+    #       description: "KDE accessibility"
+    #       packages:
+    #         - kmag
+    #         - kmousetool
+    #         - kmouth
+    #         - kontrast
+        - name: "kde-graphics"
+          description: "KDE graphics"
+          packages:
+            # - arianna
+            # - colord-kde
+            - gwenview
+            # - kamera
+            # - kcolorchooser
+            # - kdegraphics-thumbnailers
+            # - kimagemapeditor
+            # - koko
+            # - kolourpaint
+            # - kruler
+            - okular
+            # - skanlite
+            - spectacle
+            # - svgpart
+    #     - name: "kde-multimedia"
+    #       description: "KDE multimedia"
+    #       packages:
+    #         - audiocd-kio
+    #         - audiotube
+    #         - dragon
+    #         - elisa
+    #         - ffmpegthumbs
+    #         - juk
+    #         - k3b
+    #         - kamoso
+    #         - kasts
+    #         - kdenlive
+    #         - kmix
+    #         - kwave
+    #         - plasmatube
+        - name: "kde-network"
+          description: "KDE network"
+          packages:
+            # - alligator
+            # - angelfish
+            - falkon
+            - kdeconnect
+            - kdenetwork-filesharing
+            - kget
+            # - kio-extras
+            # - kio-gdrive
+            # - kio-zeroconf
+            # - konqueror
+            - konversation
+            # - kopete
+            - krdc
+            - krfb
+            # - ktorrent
+            # - neochat
+            # - signon-kwallet-extension
+            # - tokodon
+        - name: "kde-system"
+          description: "KDE system"
+          packages:
+            - dolphin
+            - kcron
+            # - kde-inotify-survey
+            - khelpcenter
+            - kio-admin
+            - ksystemlog
+            - partitionmanager
+        - name: "kde-utilities"
+          description: "KDE utilities"
+          packages:
+            - ark
+            # - filelight
+            # - kalk
+            - kate
+            # - kbackup
+            # - kcalc
+            - kcharselect
+            - kdebugsettings
+            # - kdf
+            - kdialog
+            - keditbookmarks
+            # - keysmith
+            - kfind
+            - kgpg
+            # - kongress
+            - konsole
+            # - krecorder
+            # - kteatime
+            # - ktimer
+            # - ktrip
+            - kwalletmanager
+            # - kweather
+            # - markdownpart
+            - print-manager
+            # - skanpage
+            # - sweeper
+            # - telly-skout
+            # - yakuake

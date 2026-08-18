@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Set default calamares configuration to allow root execution without errors
+cd /etc
+ln -s calamares-offline calamares 2>/dev/null
+
+# Delete stock calamares .desktop file
+rm -f /usr/share/applications/calamares.desktop
+
+rm -f $0

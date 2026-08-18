@@ -1,0 +1,3 @@
+Only common.yaml is processed by buildiso. The overlay contents must be symlinked from the profiles.
+
+Use packages-{apps,misc} to add packages, not packages-base.

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Remove unconfigured sessions
+rm -f /usr/share/{wayland-,x}sessions/{openbox,kodi*}.desktop 2>/dev/null
+# and wayland in live
+#[ $(hostname) == artix-live ] && rm -f /usr/share/wayland-sessions/* 2>/dev/null
+
+# Run once and disappear
+rm -f $0
